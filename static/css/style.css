@@ -1,0 +1,530 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  margin-top: 90px; /* Hauteur du header */
+}
+
+footer {
+  background-color: #333; /* Couleur de fond du footer */
+  color: #fff; /* Couleur du texte du footer */
+  background-color: #023e8a;
+}
+header {
+  background-color: white; /* Couleur de fond du header */
+  color: #fff; /* Couleur du texte du header */
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Pour s'assurer que le header est au-dessus des autres éléments */
+}
+#logo{
+width: 70px;
+height: 50px;
+top:  0;
+left: 2;
+object-fit: cover;
+
+}
+#ins{
+  background-color: #023e8a;
+  color: white;
+}
+#con{
+  background-color: #e37321;
+  color: white;
+}
+.nav-link{
+  margin:8px;
+}
+.divider {
+  border-left: 1px solid white; /* Couleur de la bordure */
+  height: 100%;
+}
+#banner{
+  background-image: url('.././img/banner1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px; /* Définir la hauteur du div parent à votre préférence */
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: flex-end; /* Aligner à droite horizontalement */
+}
+#banner1{
+  background-image: url('.././img/ftmdd.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px; /* Définir la hauteur du div parent à votre préférence */
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: center;
+}
+#banner1 .nav-link {
+  background-color: #023e8a;
+  color: white;
+  padding: 9px;
+  font-weight: bold;
+}
+.text-banner {
+  margin-right: 300px; /* Ajouter une marge autour du texte */
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.row1 {
+  height: 311px;
+  width: 100%;
+  display: flex;
+  margin:0 !important;
+  padding:0 !important;
+}
+.row2 {
+  width: 100%;
+  display: flex;
+  margin:0 !important;
+  padding:0 !important;
+}
+.container{
+  padding:0 !important;
+}
+.bn {
+  width: 80%;
+  text-align: center;
+  padding: 50px;
+}
+.bn1{
+  width: 50%;
+  margin-top: 20px;height: 311px;
+
+}
+.tn{ 
+  width: 20%;
+  background-size: cover;
+  background-image: url(.././img/contact.png);
+}
+.tn1{
+  width: 50%; 
+}
+@media screen and (max-width: 1140px) {
+  /* Appliquer ces styles lorsque la largeur de l'écran est inférieure à 768 pixels (appareil mobile) */
+  .text-banner {
+    display: none; /* Masquer le texte sur les appareils mobiles */
+  }
+  .row1 {
+    height: 400px;
+    width: 100%;
+    display: flex;
+
+  }
+  .bn {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .tn{
+    width: 0%;
+    background-image: none;
+  }
+  .row1 .mdd{
+    padding: 20px;
+  }
+  .bn1{
+    width: 100%;
+  
+  }
+  .tn1{
+    width: 0%; 
+    height: 0%;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center; /* Alignement horizontal au centre */
+    margin-top: 20px;
+  }
+}
+
+#pagecontact{
+  background-image: url(.././img/main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mdd {
+  position: relative;
+  width: 100%;
+  min-height: 311px;
+  text-align: center;
+  padding: 100px;
+}
+.mddd{
+  position: relative;
+  width: 100%;
+  min-height: 311px;
+  text-align: center;
+}
+
+.mdd::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(.././img/ftmdd.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(8px); /* Ajustez la valeur de flou selon vos besoins */
+  z-index: -1;
+}
+#nll iframe {
+  margin-bottom: 100px;
+}
+.submit{
+  background-color: #023e8a;
+  color: white;
+  border: none;
+  padding: 7px;
+}
+
+.slider{
+  max-width: 100%;
+  display: flex;
+  margin-bottom: 100px;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+  height:300px;
+  margin-bottom:20px;
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+.card1{
+  padding: 30px 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: none !important;
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)}
+.blue-text{
+  color: #00BCD4}
+.form-control-label{
+  margin-bottom: 0}
+input, textarea, button{
+  padding: 8px 15px;
+  border-radius: 5px !important;
+  margin: 5px 0px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-weight: 300}
+input:focus, textarea:focus{
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #00BCD4;
+  outline-width: 0;font-weight: 400}
+  .btn-block{text-transform: uppercase;
+    background-color: #023e8a;
+    color: #fff;
+    font-size: 15px !important;font-weight: 400;height: 43px;cursor: pointer}
+    .btn-block:hover{color: #fff !important}
+    button:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-width: 0}
+    input::placeholder {
+      font-size: 14px; /* Ajustez la taille selon vos besoins */
+      color: #999; /* Couleur du texte du placeholder */
+    }
+ .password-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .password-input {
+      border: 1px solid #ccc; /* Ajouter une bordure au champ de texte */
+      border-radius: 5px; /* Ajouter des coins arrondis à la bordure */
+    }
+
+    .eye-icon {
+      position: absolute;
+      top: 50%;
+      right:30px;
+      cursor: pointer;
+      color: black; /* Couleur de l'icône */
+    } 
+    form .otp{
+      display:inline-block;
+      width:40px;
+      height:40px;
+      text-align:center;
+    }
+    .Grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+    .Item1, .Item2, .Item3 {
+      width: 100%; /* Les éléments occupent 100% de la largeur de la colonne */
+      padding: 20px;
+      border: 1px solid #000;
+    }
+  
+  .Item3 {
+    grid-column: 2;
+    grid-row: 1 / 4;
+  }
+  
+  .Item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .card{
+    width: 50%;
+  }
+  .Item2 {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+h1,h2,p{
+  margin: 0;
+}
+
+h1{
+  font-family: 'Arvo', serif;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+.row3{
+
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.row4{
+  margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.row5{
+  margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: solid 1px grey;
+  margin-top: 10px;
+
+}
+.row5 .col h6{
+  color: #0a66c2;
+}
+.row6{
+  margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 35%;
+  margin-top: 10px;
+}
+
+#card {
+  border: solid 2px #000;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px #000;
+  background-image: url(../img/Rectangle\ 75.jpg);
+  background-size: cover;
+  margin: auto;
+  height: 250px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.card-box {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  background-color: rgba(95, 95, 95, 0.5); /* Couleur de fond avec opacité */
+  border-radius: 10px;
+  margin-top: 40px;
+  backdrop-filter: blur(px); /* Flou du fond */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardtitle {
+  margin: 0;
+  color: white;
+}
+.post{
+    width: 100%;
+  height: 30px;
+
+  padding: 5px;
+  background: url('') no-repeat right center;
+  background-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333; /* Couleur du texte dans la liste déroulante */
+}
+.select_box{
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+}
+
+.select_box:after{
+  width: 0; 
+  height: 0; 
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #F75100;
+  position: absolute;
+  top: 40%;
+  right: 5px;
+  content: "";
+  z-index: 98;
+ }
+.select_box select{
+  border: none;
+  position: relative;
+  z-index: 99;
+  background: none;
+  appearance: none;
+}
+#card-photo img {
+  height: 150px;
+  width: 150px;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 10px;
+
+}
+
+
+#card-information {
+  display: flex;
+  padding: 5px;
+}
+
+.cardtitle{
+  color: #fff;
+}
+
+#card-detail {
+  display: flex;
+  
+}
+
+.card-box {
+  margin-right: 20px;
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* Alignement horizontal au centre */
+  margin-top: 20px;
+}
+#service {
+  display: none; /* Ajout du style pour cacher par défaut */
+}
+#banque {
+  display: block; /* Ajout du style pour cacher par défaut */
+  overflow-y: auto; /* Ajout de la propriété overflow-y */
+  max-height: 300px; /* Ajout d'une hauteur maximale pour montrer l'effet de défilement */
+  border: none; /* Ajout d'une bordure pour plus de visibilité */
+
+}
+.round-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 1px #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px; /* Pour centrer le texte verticalement */
+  text-decoration: none; /* Pour les liens, désactive le soulignement par défaut */
+  margin: 0 10px; /* Marge entre les boutons ou les liens */
+  display: inline-block; /* Pour aligner les liens horizontalement */
+}
+.round-button-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 1px #fff;
+  background-color: transparent;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  display: inline-block;
+  object-fit: cover; /* Cette propriété garantit que l'image couvre entièrement le conteneur tout en préservant son ratio d'aspect */
+}
+
+.profile-container {
+  margin-left:33%;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #e37321; /* Couleur de la bordure */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}

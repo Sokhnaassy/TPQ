@@ -1,0 +1,49 @@
+<!-- base.html -->
+{% extends '../includes/base.html' %}
+
+{% block content %}
+  <main>
+    <!-- Contenu principal de la page -->
+    <div id="banner1">
+      <a class="nav-link" href="#">Voir le site du labo</a>
+    </div>
+    <div class="text-center" style="margin-top: 40px;margin-bottom: 40px;font-size:30px;font-weight:bold">
+      Rejoignez notre équipe ou demandez nos services
+    </div>
+
+    <div class="container" >
+      <div class="row1">
+          <div class=" bn1">
+    <div class="p-4" style="margin-top: 60px;background-color:#E1E9FE;padding:30px;">
+      <b>CONTACTEZ-NOUS</b><br><br>
+      <form action="" method="get">
+        <div class="form-group mt-3">
+          <label for="email">Email :</label>
+          <input type="text" class="form-control mt-3" id="email" style="width:100%;">
+        </div>
+        <div class="form-group mt-3">
+          <label for="message" >Message :</label>
+          <textarea class="form-control mt-3" id="message" rows="4" style="width:100%;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-3">Envoyer</button>
+      </form>
+    </div>
+  </div>
+  <div class="tn1" id="pagecontact"></div>
+</div>
+</div>
+
+    <div class="text-center" style="margin-top: 210px;margin-bottom: 40px;font-size:30px;font-weight:bold">
+      Notre localisation
+    </div>
+    <div class="container" >
+      <div class="row2" >
+          <div class="mddd"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15437.114699727492!2d-17.2311525!3d14.69682635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec19f02fc8671b5%3A0x780e729f279d5b73!2sPoste%20de%20Sante%20Medinatoul%20Mounawara!5e0!3m2!1sfr!2ssn!4v1706800068574!5m2!1sfr!2ssn"
+            width="100%" height="311" style="margin-bottom:40px" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe></div>
+      </div>
+  </div>
+</main>
+{% endblock %}

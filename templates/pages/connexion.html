@@ -1,0 +1,80 @@
+<!-- base.html -->
+{% extends '../includes/base.html' %}
+
+{% block content %}
+    <main>
+                          
+        <div class="container">
+            <div class="container-fluid px-1 py-5 mx-auto">
+                <div class="row2 d-flex justify-content-center">
+                    <div class="mddd col-xl-6 col-lg-6 col-md-6 col-11 ">
+                        <h3 style="margin-bottom: 20px;" class="text-center">Connectez-vous à votre compte </h3>
+                            <p class="blue-text"></p>
+                        <!-- <p class="blue-text">Just answer a few questions<br> so that we can personalize the right experience for you.</p> -->
+                        <div class="card1">
+                            <!-- <h5 class="text-center mb-4">Powering world-class companies</h5> -->
+                            <form class="form-card" method="post">
+                               
+                                
+                                <div class="row justify-content-between text-left">
+                                    <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input type="text" id="mail"  placeholder="Entrez votre mail"> </div>
+                                </div>
+                                <div class="row justify-content-between text-left">
+                                    <div class="form-group col-12 flex-column d-flex password-container">
+                                        <label class="form-control-label px-3">Mot de passe <span class="text-danger">*</span></label>
+                                        <input type="password" id="pwd"  spellcheck="false" placeholder="Entrez un mot de passe" class="password-input">
+                                        <i class="uil uil-eye-slash toggle eye-icon" id="togglePassword"></i>
+                                    </div>
+                                </div>
+                                
+
+                               
+                                
+                                <div class="row justify-content-end">
+                                    <div class="form-group col-sm-12"> <button type="submit" class="btn-block">Soumettre</button> </div>
+                                </div>
+                                <div style="font-size: 10px;margin-bottom:20px" class="text-left">
+<a href="{% url 'inscription'%}" style="text-decoration: none;color:#e37321;font-size:16px;">Créer un compte </a> <br> 
+<a href="#" style="text-decoration: none;color:#e37321;font-size:16px;" data-toggle="modal" data-target="#exampleModal">
+    Mot de passe oublié ?</a><br>
+    <a href="{% url 'dashbord_u'%}" style="text-decoration: none;color:#e37321;font-size:16px;">Dashbord user</a><br>
+    <a href="{% url 'dashbord_a'%}" style="text-decoration: none;color:#e37321;font-size:16px;">Dashbord admin</a>
+
+</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Réinitialiser votre mot de passe</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Vous avez oublié votre mot de passe ? Pas besoin de paniquer ! Nous vous enverrons un lien vers votre e-mail. Après avoir cliqué sur le lien, votre mot de passe sera réinitialisé et vous serez autorisé à saisir un nouveau mot de passe.<br><br>
+            <form class="form-card" method="post">
+                <div class="row justify-content-between text-left">
+                    <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input type="text" id="mail"  placeholder="Entrez votre mail"> </div>
+                </div>
+          <button type="submit" class="btn-block">Envoyer</button></form>
+        </div>
+        <div class="modal-footer">
+            
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}

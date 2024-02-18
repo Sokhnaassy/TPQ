@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="corps">
+    <div id="box">
+        <div id="titre-box">titre</div>
+        <button id="croix" onclick="fermer_box('box')"></button>
+        <div id="image-box"></div>
+        <div id="texte1-box"></div>
+        <button id="loupe" onclick="loupe('')"></button>
+        <div id="texte2-box"></div>
+    </div>
+    <button id="bouton" onclick="ouvrir_box('box', 'Titre 1', 'Texte 1-1', 'Texte 2-1');">Voir</button>
+
+    <button id="bouton" onclick="ouvrir_box('box');"> Voir </button>
+    <button id="bouton" onclick="ouvrir_box('box');"> Voir </button>
+    <button id="bouton" onclick="ouvrir_box('box');"> Voir </button>
+    <button id="bouton" onclick="ouvrir_box('box');"> Voir </button>
+        
+    <script type="text/javascript">
+    
+        function ouvrir_box(id) {
+        
+        var divelement = document.getElementById(id);
+    
+           if(divelement.style.display == 'block')
+              divelement.style.display = 'none';
+           else
+              divelement.style.display = 'block';
+        }
+        
+        function fermer_box(id) {
+    
+           var divelement = document.getElementById(id);
+    
+           if(divelement.style.display == 'block')
+              divelement.style.display = 'none';
+           else
+              divelement.style.display = 'block';
+        }
+    
+        
+    </script>   
+    </body>
+    <style>
+        #corps{
+            background:
+        brown;
+        }
+        #bouton {
+            color: 
+        purple;
+            background-color: 
+        pink;
+            border: 0px;
+        }
+        #bouton:hover {
+            color: 
+        pink;
+            background-color: 
+        purple;
+        }
+        #box{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            display: none;
+            background: 
+        blue;
+            width: 440px;
+            height: 300px;
+            margin: 100px auto 0 auto;
+        }
+        #titre-box{
+            position: absolute;
+            width: 300px;
+            height: 22px;
+            color: 
+        yellow;
+            font-size: 20px;
+            background: 
+        green;
+            margin: 20px 0 0 20px;
+        }
+        #croix{
+            width: 19px;
+            height: 19px;
+            float: right;
+            margin: 8px 12px 0 0;
+            border: 0px;
+            background: 
+        yellow;
+        }
+        #croix:hover{
+            border: 0px;
+            background: url(croix.png);
+            cursor: pointer;
+            background: 
+        green;
+        }
+        #image-box{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            margin: 70px 0 0 35px;
+            background: 
+        black;
+        }
+        #texte1-box{
+            position: absolute;
+            width: 235px;
+            height: 120px;
+            margin: 70px 0 0 150px;
+            background: 
+        green;
+            float: right;
+        }
+        #loupe{
+            width: 22px;
+            height: 22px;
+            margin: 176px 0 0 117px;
+            border: 0px;
+            background: 
+        yellow;
+        }
+        #loupe:hover{
+            border: 0px;
+            background: url(loupe.png);
+            cursor: pointer;
+            background: 
+        green;
+        }
+        #texte2-box{
+            position: absolute;
+            width: 365px;
+            height: 70px;
+            margin: 10px 0 0 35px;
+            background: 
+        green;
+        }
+    </style>
+</html>

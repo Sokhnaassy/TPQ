@@ -1,0 +1,105 @@
+{% extends '../includes/base.html' %}
+{% load static %}
+{% block content %}
+    <main>
+        <!-- Contenu principal de la page -->
+        <div id="banner">
+            <p class="text-banner">Nous vous souhaitons la <br> bienvenue  sur notre <br> plateforme de transactions.</p>
+        </div>
+        <div class="text-center" style="margin-top: 40px;margin-bottom: 40px;font-size:30px;font-weight:bold">
+            Présentation
+        </div>
+
+        
+        <div class="container text-center" style="  background: linear-gradient(180deg, rgba(226, 234, 255, 0.56) 38.1%, rgb(255, 133, 0) 100%);
+        " >
+            <div class="row1">
+                <div class=" bn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet nulla tristique, tempor mi ut, pretium nulla.
+                    Donec facilisis mollis turpis, at scelerisque massa iaculis vel. Quisque elementum metus quis purus rhoncus, et mattis ante pulvinar. Sed eget est dapibus
+                    justo dictum dignissim sed ut neque. Vivamus vestibulum porttitor nunc. Nunc id dolor id sem rhoncus posuere vel quis velit. Morbi metus nulla, facilisis
+                    eget tortor non, hendrerit eleifend mi. Nam tincidunt turpis vel odio elementum cursus. Morbi in sapien non sapien lacinia bibendum at non erat.
+                    Integer consectetur dolor ut velit ullamcorper ultrices. Nullam a consectetur tortor, sed ullamcorper quam. Donec tincidunt lacus a mauris rhoncus 
+                    faucibus. Vestibulum sit amet ligula turpis. Vivamus congue lectus ac sollicitudin varius.
+                    Donec non urna venenatis dui suscipit condimentum semper in nisi.
+                </div>
+                <div class="tn">
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 40px;margin-bottom: 40px;font-size:30px;font-weight:bold">
+            Mot du Directeur
+        </div>
+        <div class="container" >
+            <div class="row1" >
+                <div class="mdd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet nulla tristique, tempor mi ut, pretium nulla.
+                    Donec facilisis mollis turpis, at scelerisque massa iaculis vel. Quisque elementum metus quis purus rhoncus, et mattis ante pulvinar. Sed eget est dapibus
+                    justo dictum dignissim sed ut neque. Vivamus vestibulum porttitor nunc. Nunc id dolor id sem rhoncus posuere vel quis velit. Morbi metus nulla, facilisis
+                    eget tortor non, hendrerit eleifend mi. Nam tincidunt turpis vel odio elementum cursus. Morbi in sapien non sapien lacinia bibendum at non erat.
+                    Integer consectetur dolor ut velit ullamcorper ultrices. Nullam a consectetur tortor, sed ullamcorper quam. Donec tincidunt lacus a mauris rhoncus 
+                    faucibus. Vestibulum sit amet ligula turpis. Vivamus congue lectus ac sollicitudin varius.
+                    Donec non urna venenatis dui suscipit condimentum semper in nisi.
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 40px;margin-bottom: 40px;font-size:30px;font-weight:bold">
+            Projets réalisés
+        </div>
+<div class="container ">
+        <div class=" slider owl-carousel">
+            <div class="card" style="width:auto">
+              <div class="img">
+      <img src="{% static 'img/Création sans titre 4.png' %}" alt=""></div>
+      <div class="content">
+                <!-- <div class="title">
+      Briana Tozour</div> -->
+      <div class="sub-title text-center">
+        Système de télécontrôle et de télégestion des objets électriques</div>
+      <!-- <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+      <div class="btn">
+                  <button>Read more</button>
+                </div> -->
+      </div>
+      </div>
+      <div class="card" style="width:auto">
+        <div class="img">
+<img src="./static/img/image 4.png" alt=""></div>
+<div class="content">
+          <!-- <div class="title">
+Briana Tozour</div> -->
+<div class="sub-title text-center">
+    Portefeuille de gestion des établissements</div>
+<!-- <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+<div class="btn">
+            <button>Read more</button>
+          </div> -->
+</div>
+</div>
+  <div class="card" style="width:auto">
+              <div class="img">
+      <img src="./static/img/image 5.png" alt=""></div>
+      <div class="content">
+                <!-- <div class="title">
+      Briana Tozour</div> -->
+      <div class="sub-title text-center">
+        Système de gestion des hôtels et agents immobiliers</div>
+      <!-- <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+      <div class="btn">
+                  <button>Read more</button>
+                </div> -->
+      </div>
+      </div>
+      </div></div>
+      <script>
+            $(".slider").owlCarousel({
+              loop: true,
+              autoplay: true,
+              autoplayTimeout: 2000, //2000ms = 2s;
+              autoplayHoverPause: true,
+            });
+          </script>
+      
+    </main>
+    {% endblock %}

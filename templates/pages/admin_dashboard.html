@@ -1,0 +1,225 @@
+{% extends '../includes/base_dashboard_admin.html' %}
+{% load static %}
+{% block content %}
+<main>
+
+
+    <div class="container" >
+        <div class="row3" style="margin-top: 110px;">
+            <div class="col">
+                <div id="card">
+
+                    <div id="card-information">
+                        <div id="card-photo">
+                            <img src="{% static 'img/qr.png'%}" alt="">
+                        </div>
+                        <div id="card-text">
+
+                            <div id="card-detail">
+
+                                <div class="card-box">
+                                    <p class="cardtitle"
+                                        style="display: inline-block; margin-left:50px;margin-top:50px;color:white;min-width:300px">
+                                    <h3 style="color:white" >20 030 FCFA &nbsp;<i class="uil uil-eye-slash toggle"
+                                            id="togglePassword" style="display: inline-block;"></i></h3>
+                                    </p>
+                                    <p class="cardtitle">Modou Sy</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card " style="width: 100%;margin-top:30px;margin-bottom:30px;">
+                    <div class="card-header" style="background-color: #023e8a;">
+                        <div class="button-container">
+                            <a href="#" class="round-button" onclick="masquer_div('banque');"
+                                style="background-image: url(../static/img/banque.jpeg);background-size:cover;"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="round-button" onclick="masquer_div('service');" 
+                                style="background-image: url(../static/img/params.png);background-size:contain;"></a>
+                          
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div id="banque">
+                            <div class="card  mb-3" style="width: 100%;color:black;border:none;">
+                                
+                                        <div class="row5">
+                                            <div class="col">
+                                                <h6>Retrait</h6>
+                                                <p style="font-size: 13px;">19/11/2033 à 00h46</p>
+        
+                                            </div>
+                                            <div class="col text-right">
+                                                <h6>-2000 FCFA </h6>
+                                            </div>
+                                        </div>
+                                        <div class="row5">
+                                            <div class="col">
+                                                <h6>A Moussa Faye</h6>
+                                                <p style="font-size: 13px;">19/11/2033 à 00h46</p>
+        
+                                            </div>
+                                            <div class="col text-right">
+                                                <h6>-20 000 FCFA</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row5">
+                                            <div class="col">
+                                                <h6>Salaire</h6>
+                                                <p style="font-size: 13px;">19/11/2033 à 00h46</p>
+        
+                                            </div>
+                                            <div class="col text-right">
+                                                <h6>1 000 000 FCFA</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row5">
+                                            <div class="col">
+                                                <h6>De Mr Diaw</h6>
+                                                <p style="font-size: 13px;">19/11/2033 à 00h46</p>
+        
+                                            </div>
+                                            <div class="col text-right">
+                                                <h6>500 000 FCFA</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row5">
+                                            <div class="col">
+                                                <h6>Retrait</h6>
+                                                <p style="font-size: 13px;">19/11/2033 à 00h46</p>
+        
+                                            </div>
+                                            <div class="col text-right">
+                                                <h6>-2000 FCFA</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                           
+                         </div>
+                         <div id="service">
+                            <div class="card  mb-3" style="width: 100%;color:black;border:none;">
+                                
+                                <div class="row6">
+                                    <div class="col text-center mb-4" style="background-color: #ff8500; border-radius: 20px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                        <a href="http://" style="color: white; text-decoration: none;">Années</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="row6">
+                                    <div class="col text-center mb-4" style="background-color: #ff8500; border-radius: 20px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                        <a href="http://" style="color: white; text-decoration: none;">Service</a>
+                                    </div>
+                                </div>
+
+                                <div class="row6">
+                                    <div class="col text-center mb-4" style="background-color: #ff8500; border-radius: 20px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                        <a href="http://" style="color: white; text-decoration: none;">Action</a>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         
+                    </div>
+                    <div class="card-footer text-muted" style="background-color: #023e8a;">
+                    &nbsp;&nbsp;
+                    </div>
+                  </div>
+                <div>
+                    
+                     
+                     
+                </div>
+            </div>
+            <div class="col" style="padding: 20px; border: solid 1px black">
+                <div class="card text-white mb-3" style="width: 100%;background-color:#FF5400">
+                    <div class="card-header border-white">Mes dépenses
+                        <h3>50 000 FCFA</h3>
+                        <p>Mis à jour le 19/11/2033 à 00h46</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row3">
+                                <div class="col">
+                                    <h6>Pourvoir</h6>
+                                    <p style="font-size: 13px;">30 030 FCFA</p>
+
+                                </div>
+                                <div class="col">
+                                    <h6>Avoir</h6>
+                                    <p style="font-size: 13px;">10 030 FCFA</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white mb-3" style="width: 100%;background-color:#FF6D00">
+                    <div class="card-header border-white">Mes Postes</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="select_box">
+                                <select class="post">
+                                    <option value="books">Directeur Général</option>
+                                    <option value="html">Secretaire Général</option>
+                                    <option value="css">Comptable</option>
+                                    <option value="php">RH</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card text-white mb-3" style="width: 100%;background-color:#FF8500">
+                    <div class="card-header border-white">Portefeuille</div>
+                    <div class="card-body">
+                        <div class="button-container">
+                            <a href="#" class="round-button" style="display: flex; justify-content: center; align-items: center;">
+                                <img class="round-button" src="{% static 'img/wave.png' %}" alt="" >
+                            </a>
+                            <a href="#" class="round-button" style="display: flex; justify-content: center; align-items: center;">
+                                <img class="round-button" src="{% static 'img/orange.png' %}" alt="" >
+                            </a>
+                            <a href="#" class="round-button" style="display: flex; justify-content: center; align-items: center;">
+                                <img class="round-button" src="{% static 'img/free-money.png' %}" alt="" >
+                            </a>
+                           
+                            <a href="#" class="round-button"><i class="fa-solid fa-plus"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white mb-3" style="width: 100%;background-color:#FF9100">
+                    <div class="card-header border-white">Paiement à Venir</div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row4">
+                                <div class="col">
+                                    <h6>1 000 000 FCFA</h6>
+                                    <p style="font-size: 13px;">D'ici le 19/11/2033 à 00h46</p>
+
+                                </div>
+                                <div class="col text-right">
+                                    <h6>client woyofal</h6>
+                                </div>
+                            </div>
+                            <div class="row4">
+                                <div class="col">
+                                    <h6>1 000 000 FCFA</h6>
+                                    <p style="font-size: 13px;">D'ici le 19/11/2033 à 00h46</p>
+
+                                </div>
+                                <div class="col text-right">
+                                    <h6>client Entreprise</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+</main>
+{% endblock %}
